@@ -9,13 +9,13 @@ if __name__ == '__main__':
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
 
-        a = int(argv[1])
-        b = int(argv[3])
-        if argv[2] == '+':
-            print('{} + {} = {}'.format(a, b, add(a, b)))
-        if argv[2] == '-':
-            print('{} - {} = {}'.format(a, b, sub(a, b)))
-        if argv[2] == '*':
-            print('{} * {} = {}'.format(a, b, mul(a, b)))
-        if agrv[2] == '/':
-            print('{} / {} = {}'.format(a, b, div(a, b)))
+    a = int(argv[1])
+    b = int(argv[3])
+    if argv[2] == '+':
+        print('{} + {} = {}'.format(a, b, add(a, b)))
+    if argv[2] == '-':
+        print('{} - {} = {}'.format(a, b, sub(a, b)))
+    if argv[2] == '*':
+        print('{} * {} = {}'.format(a, b, mul(a, b)))
+    if argv[2] == '/':
+        print('{} / {} = {}'.format(a, b, div(a, b)))
