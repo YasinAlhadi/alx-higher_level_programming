@@ -1,0 +1,53 @@
+The ``0-add_integer`` module
+=============================
+
+Using ``add_integer``
+--------------------
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+integer and integer:
+
+	>>> add_integer(1, 2)
+	3
+	
+float, ineger:
+
+	>>> add_integer(3.3, 2)
+	5
+
+float values:
+
+	>>> add_integer(3.3, 2.1)
+	5
+
+defult value:
+
+	>>> add_integer(3)
+	101
+
+positive, negative:
+
+	>>> add_integer(3, -1)
+	2
+
+Invalid agr (first value), int:
+
+	>>> add_integer("hello", 3)
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+int, invalid type (second value):
+
+	>>> add_integer(3, "g")
+	Traceback (most recent call last):
+	...
+	TypeError: b must be an integer
+
+Invalid agrs:
+
+	>>> add_integer(None, "NULL")
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
