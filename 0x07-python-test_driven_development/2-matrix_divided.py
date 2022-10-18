@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-"""``2-matrix_divided`` module"""
+"""
+
+    ``2-matrix_divided`` module
+
+"""
 
 
 def matrix_divided(matrix, div):
