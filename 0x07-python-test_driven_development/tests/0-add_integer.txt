@@ -4,6 +4,8 @@ The ``0-add_integer`` module
 Using ``add_integer``
 --------------------
 
+	>>> import sys
+	>>> sys.path.append('../')
 	>>> add_integer = __import__('0-add_integer').add_integer
 
 integer and integer:
