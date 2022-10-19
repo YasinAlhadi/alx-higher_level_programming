@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """``0-add_integer`` module:
-    contain add_ineger function 
-    return addition a and b 
+    contain add_ineger function
+    return addition a and b
     a and b must be integers or floats
     a and b must be first casted to integers if they are float"""
 
