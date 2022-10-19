@@ -8,7 +8,21 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_max_complete_list(self):
         self.assertEqual(max_integer([1, 2, 3, 4]), 4)
+
+    def test_max_one_negative_list(self):
         self.assertEqual(max_integer([1, 2, -3, 4]), 4)
+
+    def test_max_all_negative_list(self):
+        self.assertEqual(max_integer([-1, -2, -3, -4]), -1)
+
+    def test_max_one_element_list(self):
+        self.assertEqual(max_integer([2]), 2)
+
+    def test_max_at_beg_list(self):
+        self.assertEqual(max_integer([4, 2, 6, 3, 1]), 6)
+
+    def test_max_midd_list(self):
+        self.assertEqual(max_integer([4, 2, 3, 1]), 4)
 
     def test_max_empty_list(self):
         self.assertEqual(max_integer([]), None)
