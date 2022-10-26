@@ -49,6 +49,34 @@ Float value:
 	...
 	TypeError: age must be an integer
 
+Bool value:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", True)
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+Tuple value:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", (4,))
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+List value:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", [3, 5])
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
+Dictionary value:
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("age", {3: 5})
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
+
 Missing arguments:
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator()
@@ -69,3 +97,8 @@ Passing more than 2:
 	Traceback (most recent call last):
 	...
 	TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+--area()---
+Area is instance:
+	>>> type(BaseGeometry.__dict__['area'])
+	<class 'function'>
