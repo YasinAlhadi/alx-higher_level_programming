@@ -69,24 +69,25 @@ class Rectangle(Base):
     def display(self):
         """that prints in stdout the Rectangle
         instance with the character '#'."""
-        rect = "\n" * self.__y + (" " * self.x + "#" * self.width + '\n') *\
+        rect = "\n" * self.__y + (" " * self.x + "#" * self.width + '\n') *
         self.__height
         print(rect, end="")
 
     def __str__(self):
         """method that returns [Rectangle]
         (<id>) <x>/<y> - <width>/<height>"""
-        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__, self.id,
-                self.x, self.y, self.width, self.height)
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name__,
+                                                self.id, self.x, self.y,
+                                                self.width, self.height)
 
     def update(self, *args, **kwargs):
         """method update that assigns an argument to each attribute"""
         if len(args) > 0:
             for i, arg in enumerate(args):
                 if i == 0:
-                   self.id = arg
+                    self.id = arg
                 if i == 1:
-                   self.width = arg
+                    self.width = arg
                 if i == 2:
                     self.height = arg
                 if i == 3:
@@ -110,4 +111,4 @@ class Rectangle(Base):
         """ ``to_dictionary`` that returns the dictionary
         representation of a Rectangle"""
         return {'id': self.id, 'width': self.__width,
-                 'height': self.__height, 'x': self.__x, 'y': self.__y}
+                'height': self.__height, 'x': self.__x, 'y': self.__y}
